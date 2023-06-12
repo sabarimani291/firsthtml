@@ -1,47 +1,118 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.cs">
 </head>
 <body>
-<form name="f1">
-<h3><u><center>Application Form</center></u></h3>
-<table border="10" bgcolor="orange" cellpadding="10px" cellspacing="10px" align="center">
-<tr>
-<td>Name:</td>
-<td><input type="text" name="t1"></td>
+    <h1>this is html table</h1>
+<table border="1px" bordercolor="red">
+<tr bgcolor="olive green">
+    <th>sr no</th>
+    <th>iteam</th>
+    <th>price (Rs)</th>
 </tr>
 <tr>
-<td>Password:</td>
-<td><input type="password" name="t2"></td>
+    <td>1</td>
+    <td>milk</td>
+    <td>20</td>
 </tr>
 <tr>
-<td>Date OF Birth:</td>
-<td><input type="date" name="t3"></td>
+    <td>2</td>
+    <td>tea</td>
+    <td>30</td>
 </tr>
 <tr>
-<td>Gender:</td>
-<td><input type="radio" name="t4">Male
-<input type="radio" name="t4">Female</td>
+    <td>3</td>
+    <td>coffee</td>
+    <td>35</td>
 </tr>
 <tr>
-<td>Qualification:</td>  
-<td><input type="checkbox" name="t5">MBA
-<input type="checkbox" name="t6">MCA
-<input type="checkbox" name="t7">BE</td>
+    <td>4</td>
+    <td>black coffee</td>
+    <td>25</td>
 </tr>
 <tr>
-<td>Address:</td>
-<td><TextArea cols="20" rows="10ss"></TextArea></td>
+    <td>5</td>
+    <td>green tea</td>
+    <td>30</td>
 </tr>
 <tr>
-<td><center><input type="SUBMIT" name="b1" value="ok">
-<input type="RESET" name="b2" value="cancel"></td>
+    <td colspan="2">total</td>
+    <td>140</td>
 </tr>
-</table>
+</table><br>
+<h2>this is html list</h2>
+<ol type="I" start="2">
+    <li>apple</li>
+    <li>mango</li>
+</ol>
+
+<ul type="square">
+    <li>patato</li>
+    <li>carrot</li>
+</ul>
+<h1>this is hyper link in html this is img links</h1>
+<a href="https://www.google.com" target="_self">google</a><br>
+<a href="https://www.google.com" target="_blank"><img src="google.jpg" alt="no img" height="50px" width="50px"></a>
+<br>
+    <div class="full">
+        <div class="applybox">
+        <form action="">
+            <H3>Job Application</H3>
+    <div class="formfull">
+        <div class="form line">
+            <label for="fn">First name</label>
+            <input id="fname"  placeholder="ENTER FIRST NAME" required><br>
+        </div>
+        <div class="form line">
+            <label for="lname">Last name</label>
+            <input id="lname" placeholder="ENTER LAST NAME" required> 
+        </div>
+        <div class="form line">
+            <lable for="email">Email</lable>
+            <input type="email" id="email" placeholder="ENTER EMAIL" required>
+        </div>
+        <div class="from line">
+          <label for="job role">Job Role</label>  
+          <select id="job role" name="job role" required>
+            <option value="">Select Job Roll</option>
+            <option value="Front End">Front End</option>
+            <option value="Back End">Back End</option>
+            <option value="Angular Js">Angular JS</option>
+            <option value="React Js">React Js</option>
+          </select>
+        </div>
+        <div class="form line">
+        <label for="textarea">Address</label>
+        <textarea id="textarea" name="textarea" required></textarea>
+        </div>
+        <div class="form line">
+            <label for="city">City</label>
+            <input id="city" name="city"  placeholder="ENTER THE CITY" required>
+        </div>
+        <div class="form line">
+            <label for="pincode">Pincode</label>
+            <input id="pincode" name="pinecode" placeholder="ENTER THE PINECODE" required>
+        </div>
+        <div class="form line">
+            <label for="dob">D.O.B</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form line">
+            <label for="upload">Upload Your CV</label>
+            <input type="file" id="file" name="file" required>
+        </div>
+        <div class="button">
+            <button type="submit">Apply Now</button>
+        </div>
+</div>
+    </div>
 </form>
+</div>
 
     </body>
 </html>
